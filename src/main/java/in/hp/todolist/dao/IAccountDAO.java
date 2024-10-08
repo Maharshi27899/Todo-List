@@ -17,7 +17,5 @@ public interface IAccountDAO {
 	public Boolean changePassword(Account account);
 	
 	public ArrayList<Account> getAllAccounts();
-	
-	
-	
+
 }

@@ -15,6 +15,5 @@ public interface IAccountSessionDAO {
 	public AccountSession findLastAccountSession(Integer accountId);
 	
 	public ArrayList<AccountSession> getAllAccountSessions();
-	
-	
+
 }

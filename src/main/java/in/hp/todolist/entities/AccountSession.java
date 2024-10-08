@@ -9,10 +9,13 @@ public class AccountSession {
 	private Timestamp sessionCreated;
 	private Timestamp lastAccessed;
 	private Timestamp sessionEnd;
+	
+//	Empty Constructor
 	public AccountSession() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
+	
+//	Parameterized Constructor
 	public AccountSession(Integer sessionId, Integer accountId, Timestamp sessionCreated, Timestamp lastAccessed,
 			Timestamp sessionEnd) {
 		super();
@@ -22,6 +25,8 @@ public class AccountSession {
 		this.lastAccessed = lastAccessed;
 		this.sessionEnd = sessionEnd;
 	}
+	
+//	Getters & Setters 
 	public Integer getSessionId() {
 		return sessionId;
 	}
@@ -51,6 +56,13 @@ public class AccountSession {
 	}
 	public void setSessionEnd(Timestamp sessionEnd) {
 		this.sessionEnd = sessionEnd;
+	}
+	
+//	ToString
+	@Override
+	public String toString() {
+		return "AccountSession [sessionId=" + sessionId + ", accountId=" + accountId + ", sessionCreated="
+				+ sessionCreated + ", lastAccessed=" + lastAccessed + ", sessionEnd=" + sessionEnd + "]";
 	}
 	
 	
